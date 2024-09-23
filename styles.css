@@ -1,0 +1,96 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #ffffff;
+    color: #333333;  /* Dark grey for text */
+    margin: 40px;
+    padding: 0;
+}
+
+/* Header styling */
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #660099;  /* Purple */
+}
+
+/* Subheader (Department) styling */
+.department {
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 30px;
+    color: #660099;  /* Purple */
+}
+
+/* General paragraph styling */
+p {
+    margin-bottom: 20px;
+    color: #333333; /* Dark grey */
+}
+
+/* Session date and location styling */
+h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    color: #660099;  /* Purple */
+}
+
+/* Session details styling */
+.session-details {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #333333;  /* Dark grey */
+}
+
+.session-title {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #660099;  /* Purple */
+}
+
+/* Hyperlink styling */
+a {
+    color: #FFCC33;  /* Yellow */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #660099;  /* Purple on hover */
+}
+
+/* Footer styling */
+.footer {
+    margin-top: 40px;
+    font-size: 14px;
+    text-align: center;
+    border-top: 1px solid #999999;  /* Grey border */
+    padding-top: 20px;
+    color: #999999;  /* Grey text */
+}
+
+/* Adjusts the overall layout on smaller screens */
+@media (max-width: 768px) {
+    body {
+        margin: 20px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
+    .footer {
+        font-size: 12px;
+    }
+}
