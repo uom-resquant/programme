@@ -2,10 +2,24 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #ffffff;
-    color: #333333;  /* Dark grey for text */
-    margin: 40px;
+    background-image: url('manchester.png'); /* Background image */
+    background-size: cover;                 /* Cover the entire page */
+    background-attachment: fixed;           /* Make background static during scroll */
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #333333;
+    margin: 0;
     padding: 0;
+}
+
+/* Container for white text boxes */
+.container {
+    background-color: rgba(255, 255, 255, 0.9); /* White box with slight transparency */
+    padding: 20px;
+    margin: 40px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for the box */
+    max-width: 800px;
 }
 
 /* Header styling */
@@ -29,7 +43,7 @@ h1 {
 /* General paragraph styling */
 p {
     margin-bottom: 20px;
-    color: #333333; /* Dark grey */
+    color: #333333;
 }
 
 /* Session date and location styling */
@@ -45,7 +59,7 @@ h2 {
 .session-details {
     margin-bottom: 20px;
     font-size: 16px;
-    color: #333333;  /* Dark grey */
+    color: #333333;
 }
 
 .session-title {
