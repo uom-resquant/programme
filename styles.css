@@ -100,3 +100,28 @@ a:hover {
         font-size: 12px;
     }
 }
+
+/* Logo container */
+.logo-container {
+    position: relative;
+    width: 100%;
+    padding: 10px 20px; /* Adjust padding as needed */
+}
+
+/* Logo styling */
+.logo {
+    height: 50px; /* Set a fixed height for both logos */
+    object-fit: contain; /* Maintain aspect ratio */
+}
+
+.left-logo {
+    position: absolute;
+    top: 10px; /* Adjust as needed */
+    left: 20px; /* Adjust as needed */
+}
+
+.right-logo {
+    position: absolute;
+    top: 10px; /* Adjust as needed */
+    right: 20px; /* Adjust as needed */
+}
