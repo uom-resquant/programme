@@ -81,19 +81,19 @@
             generateProgramme(parsedData);
         }
 
-        // CSV parsing function
-        function parseCSV(data) {
-            const lines = data.trim().split('\n');
-            const headers = lines[0].split(',');
-            return lines.slice(1).map(line => {
-                const values = line.split(',');
-                let event = {};
-                headers.forEach((header, index) => {
-                    event[header] = values[index];
-                });
-                return event;
-            });
-        }
+        // CSV parsing function (with header trimming)
+function parseCSV(data) {
+    const lines = data.trim().split('\n');
+    const headers = lines[0].split(',').map(header => header.trim());  // Trim the headers
+    return lines.slice(1).map(line => {
+        const values = line.split(',').map(value => value.trim());  // Trim values as well
+        let event = {};
+        headers.forEach((header, index) => {
+            event[header] = values[index];
+        });
+        return event;
+    });
+}
 
         // Function to generate HTML for the programme
         function generateProgramme(events) {
