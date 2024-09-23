@@ -20,7 +20,10 @@ body {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for the box */
     max-width: 800px;
+    border: 2px solid #660099; /* Purple border */
+    box-sizing: border-box; /* Ensures padding and border are included in total width/height */
 }
+
 
 /* Header styling */
 h1 {
